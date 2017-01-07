@@ -184,7 +184,10 @@ module.exports = config => {
         sauceLabs: {
             testName: "mark.js unit tests",
             recordVideo: true,
-            recordScreenshots: true
+            recordScreenshots: true,
+            connectOptions: {
+                "B": "*google.com"
+            }
         },
         customLaunchers: customLaunchers,
         browsers: Object.keys(customLaunchers),
